@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clientdetailsidrel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:text="NAME         :"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_toLeftOf="@+id/edtName"
+            />
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_toRightOf="@+id/name"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:text="PHONE       :"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@+id/name"
+            android:layout_toLeftOf="@+id/edtPhone"
+            />
+        <TextView
+            android:id="@+id/phnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtname"
+            android:text="phonenumber"
+            android:layout_toRightOf="@+id/phone"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aadharnum"
+            android:text="AADHAR    :"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/phone"
+            />
+        <TextView
+            android:id="@+id/aadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phnum"
+            android:layout_toRightOf="@+id/aadharnum"
+            android:text="Aadhar number"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/address1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aadharnum"
+            android:text="Address     :"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aadhar"
+            android:layout_toRightOf="@+id/address1"
+            android:text="Address"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/amount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address1"
+            android:text="Amount      :"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:text="Amount"
+            android:layout_toRightOf="@+id/amount1"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intial debt  :"
+            android:id="@+id/intial"
+            android:layout_below="@+id/amount1"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intial amount"
+            android:id="@+id/intial1"
+            android:layout_toRightOf="@+id/intial"
+            android:layout_below="@+id/amount1"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/interest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intial"
+            android:text="Interest      :"
+            android:textColor="#000000"
+
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intial1"
+            android:text="Interest"
+            android:layout_toRightOf="@+id/interest1"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/dateTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interest"
+            android:text="Date,Time :"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date and Time"
+            android:id="@+id/dateTime"
+            android:layout_below="@+id/interest1"
+            android:layout_toRightOf="@+id/dateTime1"
+            android:textSize="14sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/gap1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTime1"
+            android:text="Time gap   :"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time gap"
+            android:id="@+id/cgap"
+            android:layout_below="@+id/dateTime"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/gap1"
+            android:textColor="#000000"
+            />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            android:src="@drawable/ic_menu_delete" />
+
+        <ImageButton
+            android:id="@+id/notifyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/ic_notification"
+            android:layout_below="@+id/amount1"
+            android:layout_alignParentRight="true"/>
+
+        <ImageButton
+            android:id="@+id/callbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aadhar"
+            android:background="#ffffff"
+            android:src="@drawable/ic_call"
+            android:layout_alignParentRight="true"
+            />
+
+        <ImageButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTime1"
+            android:background="#ffffff"
+            android:src="@drawable/ic_update"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

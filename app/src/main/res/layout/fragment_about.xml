@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".about">
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="#FFD700" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_y4w" />
+        <!-- TODO: Update blank fragment layout -->
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@id/view4">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/about1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About the app"
+            android:textColor="#ffd700"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textabout"
+            android:fontFamily="@font/andikanewbasic_r1"
+            android:text="This application gives a feasibility to store the data of debtors(clients) of money lenders. Most of the money lenders write the data in some books or notes applications of their debtors who are taking debt from them, every month money lenders should search client numbers to call or message for notifying them to clear the debt and to pay the interest for the debt taken, I think this may be little difficulty to some people who are busy in their work. By using this application, the user enters the details of the clients, after submitting the client’s data, the data is stored in a local database and the stored data is displayed in the client’s page, using clients page the user can send notification messages just by one click, that message contains the details of the person and also the interest amount to be given for that particular month. We can also call the clients directly from this application, here we can also update the amount taken by debtor. As all the client’s details are at one place, it would be easy to the money lenders(user) to maintain the record of debtors and made easy to send notifications."
+            android:textColor="#000000"
+            android:textSize="13dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
